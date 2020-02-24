@@ -105,7 +105,7 @@ def runCmd(String varCommand) {
 	}
 	log.debug "The method is $method"
 	try {
-		def hubAction = new physicalgraph.device.HubAction(
+		def hubAction = new hubitat.device.HubAction(
 			method: method,
 			path: path,
 			body: body,
